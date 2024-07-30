@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
 const bodyParser = require("body-parser");
@@ -11,6 +12,11 @@ const contactRoutes = require("./routes/contactRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 const app = express();
+app.use(
+  cors({
+    origin: "https://worldwidetraveltours.org",
+  })
+);
 const PORT = process.env.PORT || 3000;
 
 // Middleware
