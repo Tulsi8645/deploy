@@ -1,0 +1,280 @@
+/* Contact Section Styles */
+.contact-section {
+  background-color: #f1f1f1; 
+  padding: 60px 0; 
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #555555; 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Padding for Info Wrap */
+@media (max-width: 767px) {
+  .info-wrap {
+    padding: 15px;
+  }
+}
+
+/* Info Item Styles */
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item h3 {
+  font-size: 28px;
+  font-weight: 500 ;
+}
+
+.info-item i {
+  font-size: 22px;
+  color: #003366;
+  background: #e0e0e0; 
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
+
+/* Hover Effect for Icons */
+.info-item i:hover {
+  background-color: #c0c0c0; 
+}
+
+/* Form Styles */
+.php-email-form {
+  border-top: 3px solid #0d5c7e;
+  border-bottom: 3px solid #0d5c7e;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  }
+
+
+/* Responsive Padding for Form */
+@media (max-width: 767px) {
+  .php-email-form {
+    padding: 15px;
+}
+
+#send-message-form {
+  width: 100%;
+}
+
+/* Form Message Styles */
+.php-email-form .error-message {
+  display: none;
+  background: #e74c3c;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #27ae60;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: #ffffff;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px -4px 0;
+  border: 3px solid #003366;
+  border-top-color: #ffffff;
+  animation: rotate 1s linear infinite;
+}
+
+/* Input and Textarea Styles */
+.php-email-form input[type="text"],
+.php-email-form input[type="email"],
+.php-email-form textarea {
+  font-size: 15px;
+  padding: 12px;
+  box-shadow: none;
+  border-radius: 4px;
+  color: #333333;
+  background-color: #f9f9f9; 
+  border: 1px solid #cccccc; 
+}
+
+.php-email-form input[type="text"]:focus,
+.php-email-form input[type="email"]:focus,
+.php-email-form textarea:focus {
+  border-color: #003366; /* Darker border on focus */
+}
+
+.php-email-form input[type="text"]::placeholder,
+.php-email-form input[type="email"]::placeholder,
+.php-email-form textarea::placeholder {
+  color: #999999; /* Lighter placeholder text */
+}
+
+/* Submit Button Styles */
+.php-email-form button[type="submit"] {
+  color: #ffffff;
+  background: #0d5c7e;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: #1092ad; /* Even darker blue on hover */
+}
+
+/* Loading Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* responsive */
+/* Contact Section Styles */
+.contact-section {
+  background-color: #f1f1f1; /* Soft background for the section */
+  padding: 60px 0; /* Extra padding for emphasis */
+}
+
+.contact-section h3 {
+  font-size: 34px;
+  color: #003366; /* Darker blue for contrast */
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .contact-section h3 {
+    font-size: 28px; /* Smaller title on medium screens */
+  }
+
+  .contact-section p {
+    font-size: 16px; /* Slightly smaller text on medium screens */
+    padding: 0 15px; /* Padding for better readability */
+  }
+
+  .row {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  .col-md-6 {
+    margin-bottom: 30px; /* Space between stacked columns */
+  }
+
+  .info-wrap,
+  .php-email-form {
+    padding: 15px; /* Adjust padding for smaller screens */
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 30px 0; /* Reduced padding on smaller screens */
+  }
+
+  .contact-section h3 {
+    font-size: 24px; /* Smaller title on small screens */
+  }
+
+  .contact-section p {
+    font-size: 14px; /* Smaller text on small screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .info-item i {
+    width: 40px; /* Smaller icon on small screens */
+    height: 40px;
+    font-size: 20px; /* Smaller icon size */
+  }
+
+  .info-item {
+    margin-bottom: 15px; /* Reduced space between items */
+  }
+
+  .php-email-form input[type="text"],
+  .php-email-form input[type="email"],
+  .php-email-form textarea {
+    font-size: 14px; /* Smaller font size for inputs */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .php-email-form button[type="submit"] {
+    padding: 10px 20px; /* Smaller button size */
+  }
+
+  iframe {
+    height: 200px; /* Smaller map height on small screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-section {
+    padding: 20px 0; /* Further reduced padding on very small screens */
+  }
+
+  .contact-section h3 {
+    font-size: 36px; /* Title size for very small screens */
+  }
+
+  .contact-section p {
+    font-size: 12px; /* Text size for very small screens */
+  }
+
+  .info-item i {
+    width: 36px; /* Even smaller icon on very small screens */
+    height: 36px;
+    font-size: 18px; /* Smaller icon size */
+  }
+
+  .php-email-form input[type="text"],
+  .php-email-form input[type="email"],
+  .php-email-form textarea {
+    font-size: 13px; /* Further reduced font size for inputs */
+    padding: 8px; /* Smaller padding */
+  }
+
+  .php-email-form button[type="submit"] {
+    padding: 8px 15px; /* Smaller button size */
+  }
+
+  iframe {
+    height: 150px; /* Smaller map height on very small screens */
+  }
+}
+
+.php-email-form label {
+  text-align: left;
+  display: block; 
+  margin-bottom: 0.5rem; 
+  color: black;
+}

@@ -1,0 +1,103 @@
+/* General Styles */
+.about-section {
+  padding: 3rem 0;
+  background-color: #ffffff;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #0d5c7e;
+}
+
+.row {
+  padding: 10px 10px;
+}
+
+.divider {
+  width: 50px;
+  height: 4px;
+  background-color: #0d5c7e;
+  margin: 1rem auto;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left !important;
+}
+
+.our-story{
+  text-align: left !important ;
+}
+
+.our-story img,
+.our-long-term-goals img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.image-container {
+  margin-bottom: 1.5rem;
+  display: none;
+}
+
+.story {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: left !important;
+  /**/
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  border-radius: 10px;
+}
+
+.story p {
+  opacity: 1;
+}
+
+  .story-title {
+    font-size: 70px;
+    color: #ffffff;
+  }
+
+@media (max-width: 768px) {
+  .story p {
+    text-align: left !important;
+    width: 100% !important;
+  }
+  .image-container {
+    display: block;
+  }
+
+  .story-title {
+    font-size: 50px;
+  }
+  
+}  
+  
+
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #555;
+}
