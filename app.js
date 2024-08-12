@@ -42,8 +42,8 @@ const routeMapping = {
   "/login": "login.html",
   "/userbookings": "userbookings.html",
   "/contacts": "contacts.html",
-  "/tours": "tours.html",
-  "/toursapi": "toursapi.html"
+  "/tours": "tours.html"
+  
 
 };
 
@@ -52,8 +52,8 @@ Object.keys(routeMapping).forEach((route) => {
     route === "/userbookings" ||
     route === "/contacts" ||
     route === "/tours" ||
-    route === "/signup" ||
-    route === "/toursapi" 
+    route === "/signup" 
+    
   ) {
     app.get(route, isAuthenticated, (req, res) => {
       res.sendFile(path.join(__dirname, "public", routeMapping[route]));
